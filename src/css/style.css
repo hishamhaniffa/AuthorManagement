@@ -1,0 +1,9 @@
+body {
+	padding-top: 50px;
+}
+
+.navbar-brand img {
+	margin-top: -7px;
+	max-width: 164px;
+	max-height: 50px;
+}
