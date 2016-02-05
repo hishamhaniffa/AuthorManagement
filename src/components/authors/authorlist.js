@@ -17,7 +17,6 @@ var AuthorList = React.createClass({
 		};
 		return (
 			<div className="container">
-				<h1>Authors</h1>
 				<table className="table table-bordered">
 					<thead>
 						<th>ID</th>
