@@ -62,7 +62,12 @@ var ManageAuthorPage = React.createClass({
 			return;
 		}
 
-		AuthorAtions.createAuthor(this.state.author);
+		if (this.state.author.id) {
+			AuthorAtions.updateAuthor(this.state.author);
+		}else{
+			AuthorAtions.createAuthor(this.state.author);
+		}
+		
 		this.setState({dirty: false});
 		toastr.success('Author saved.');
 		this.transitionTo('authors');
